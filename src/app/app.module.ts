@@ -3,12 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { SharedModule } from './shared/shared.module';
+import { PaisesModule } from './paises/paises.module';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PaisesModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
